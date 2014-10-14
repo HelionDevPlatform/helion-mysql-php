@@ -1,0 +1,7 @@
+---
+applications:
+- name: mysql-php  
+  buildpack: https://github.com/cloudfoundry/php-buildpack.git
+  services:
+    ${name}-db:
+      type: mysql

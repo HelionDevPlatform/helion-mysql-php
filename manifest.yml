@@ -1,7 +1,7 @@
 ---
 applications:
-- name: mysql-php  
-  buildpack: https://github.com/cloudfoundry/php-buildpack.git
+- name: helion-mysql-php  
+  buildpack: https://github.com/heroku/heroku-buildpack-php.git  
   services:
     ${name}-db:
       type: mysql

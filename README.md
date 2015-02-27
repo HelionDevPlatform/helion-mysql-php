@@ -6,6 +6,16 @@ New users should check out the resources available at [HP Helion Docs](http://do
 The site includes more detail and has instructions on how to create an HP
 Helion Development Platform Application Lifecycle Services Cluster.
 
+This app uses the [Cloud Foundry PHP buildpack](https://github.com/cloudfoundry/php-buildpack)
+
+It should be noted that certain extensions such as mysqli are not included by 
+default in the buildpack. Therefore, mysqli was added as a requirement in 
+composer.json. 
+
+Please note that this app requires the latest buildpack from master for 
+compatibility. Once a new tagged release is available, this app will be using 
+a tagged release instead of getting the buildpack directly from master.
+
 ## Deploy to HP Helion
 You can deploy this app automatically with the button below or with the manual 
 instructions further down. In either case, you will need to have take care of the
@@ -26,9 +36,6 @@ prerequisites.
     - Go to the Management Console (e.g. https://api.example.com)
     - Admin --> Cluster --> Settings (gear icon on right corner) --> Check off 
       MySQL --> Save
-- Composer is not necessary for this sample. While there is an empty composer.json
-  file in this sample app, it's included to get rid of any potential warnings
-  due to a missing composer.json file.
     
 ## Deploy the Application
 

@@ -1,5 +1,8 @@
 # MySQL PHP 
 
+This version of the app uses a buildpack that is suitable for the HP Helion 
+Development Platform v1.1. Please check the 1.0 branch if you are using v1.0.
+
 This is a simple PHP app that uses MySQL. 
 
 New users should check out the resources available at [HP Helion Docs](http://docs.hpcloud.com/helion/devplatform/workbook/database/php/). 
@@ -15,15 +18,6 @@ composer.json.
 Please note that this app requires the latest buildpack from master for 
 compatibility. Once a new tagged release is available, this app will be using 
 a tagged release instead of getting the buildpack directly from master.
-
-## Deploy to HP Helion
-You can deploy this app automatically with the button below or with the manual 
-instructions further down. In either case, you will need to have take care of the
-prerequisites.
-
-<a href="https://deploynow.hpcloud.com/?repoUrl=https://github.com/HelionDevPlatform/helion-mysql-php">
-![Helion  Logo](https://a248.e.akamai.net/cdn.hpcloudsvc.com/g0bc199ab57e65f093a48d069effc0c3b/prodae1//button.png?id=6)
-</a>
 
 ## Prerequisites
 - If you do not have an HP Helion Development Platform Application Lifecycle 

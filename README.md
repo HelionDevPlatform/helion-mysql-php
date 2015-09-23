@@ -1,7 +1,7 @@
 # MySQL PHP 
 
 This version of the app uses a buildpack that is suitable for the HP Helion 
-Development Platform v1.1. Please check the 1.0 branch if you are using v1.0.
+Development Platform v1.3. Please check the 1.0 branch if you are using v1.0.
 
 This is a simple PHP app that uses MySQL. 
 
@@ -15,9 +15,11 @@ It should be noted that certain extensions such as mysqli are not included by
 default in the buildpack. Therefore, mysqli was added as a requirement in 
 composer.json. 
 
-Please note that this app requires the latest buildpack from master for 
-compatibility. Once a new tagged release is available, this app will be using 
-a tagged release instead of getting the buildpack directly from master.
+To ensure that your PHP applications continue to perform as expected, it is
+advisable to use a stable branch or tagged release of a buildpack. For example,
+the manifest.yml could specify a specific tagged release with the following:
+
+`buildpack: https://github.com/cloudfoundry/php-buildpack#v3.2.2`
 
 ## Prerequisites
 - If you do not have an HP Helion Development Platform Application Lifecycle 
